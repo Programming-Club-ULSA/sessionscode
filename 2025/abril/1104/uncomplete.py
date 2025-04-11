@@ -35,9 +35,7 @@ def mostrar_resultados():
     resultados = "\n".join(f"{proy}: {votos[proy]} voto(s)" for proy in proyectos)
     ganador = None
     
-    # Calcular ganador
-
-    messagebox.showinfo("Resultados de la votación", f"{resultados}\n\nProyecto ganador: {ganador}")
+    # Calcular ganador y dar feedback al usuario con messagebox.showinfo
 
 def main():
     root = tk.Tk()
